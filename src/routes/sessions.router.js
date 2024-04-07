@@ -1,5 +1,6 @@
 import express from "express";
 import UserModel from "../models/user.model.js";
+import { createHash } from "../utils/hashbcrypt.js";
 const router = express.Router();
 
 //Registro
@@ -15,7 +16,7 @@ router.post("/", async (req, res) => {
         } 
         const role = email === "admincoder@coder.com" ? "admin" : "user"
         //Si no esta registrado creamos nuevo usuario
-        const newUser = await UserModel.create({first_name, last_name, email, age, password, role})
+        const newUser = await UserModel.create({first_name, last_name, email, age, password: createHash(password), role})
         //Ahora armamos la session
         req.session.login = true;
         req.session.user = {...newUser._doc}//metodo para subir el obj newUser
