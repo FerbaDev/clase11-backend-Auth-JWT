@@ -52,7 +52,7 @@ import passport from "passport";
 // })
 //Version para apssport
 router.post("/", passport.authenticate("register", {
-    failureRedirect: "/failedregister"}), async (req, res) => {
+    failureRedirect: "/api/sessions/failedregister"}), async (req, res) => {
         req.session.user = {
             first_name: req.user.first_name,
             last_name: req.user.last_name,
