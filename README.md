@@ -4,6 +4,7 @@
 
 bcrypt ------------------------ 00:27
 trabajando en el hasheo ------- 00:44
+recuperando la contraseña ----- 00:48
 
 
 

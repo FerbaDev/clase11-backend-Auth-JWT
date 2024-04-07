@@ -5,12 +5,9 @@ import bcrypt from "bcrypt";
 //aplicar el hash al password
 //comparar el password brindado con la base de datos
 
-const createHash = (password) => {
-    bcrypt.hashSync(password, bcrypt.genSaltSync(10))
-}
+//esto se escribe con esta sintaxis, sino no funciona
+const createHash = password => bcrypt.hashSync(password, bcrypt.genSaltSync(10));
 
-const isValidPassword = (password, user) => {
-    bcrypt.compareSync(password, user.password)
-}
+const isValidPassword = (password, user) => bcrypt.compareSync(password, user.password);
 
 export { createHash, isValidPassword};
