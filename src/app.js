@@ -9,6 +9,8 @@ import exphbs from "express-handlebars";
 import "./mongoConfig.js"
 import sessionsRouter from "./routes/sessions.router.js";
 import viewsRouter from "./routes/views.router.js";
+import passport from "passport";
+import initializePassport from "./config/passport.config.js";
 
 //middleware para cookie parser
 const PASSWORD = "clavesecreta";
@@ -34,6 +36,10 @@ app.use(session({
     })
     
 }))
+//cambios con passport
+initializePassport();
+app.use(passport.initialize())
+app.use(passport.session()) 
 
 //rutas
 app.use("/api/sessions", sessionsRouter);
