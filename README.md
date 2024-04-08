@@ -18,9 +18,13 @@ rutas para passport ------------------------ 02:34
 
 ## Autenticacion con 3eros
 
-autenticación con github ------------------- 02:56
+autenticación con github ------------------- 02:55
+armando la estrategia ---------------------- 03:02    npm i passport-github2
+ruta para github --------------------------- 03:15
+
+## JWT
 
 
-dejé en ---- 02:48
+dejé en ---- 03:41
 
 () => {}

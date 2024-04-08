@@ -50,7 +50,7 @@ import passport from "passport";
 //         res.status(500).send("Error del server en login session.router")
 //     }
 // })
-//Version para apssport
+//Version para passport
 router.post("/", passport.authenticate("register", {
     failureRedirect: "/api/sessions/failedregister"}), async (req, res) => {
         req.session.user = {
@@ -86,7 +86,7 @@ router.post("/login", passport.authenticate("login", { failureRedirect:"/api/ses
 })
 
 router.get("/faillogin", async (req, res) => {
-    res.send("Fallo todooo, revisa el codigo");
+    res.send("Fallo login");
 })
 
 //Logout
