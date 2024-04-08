@@ -16,4 +16,11 @@ cambios en app para passport --------------- 01:48
 comentamos rutas en session.router --------- 01:50
 rutas para passport ------------------------ 02:34
 
+## Autenticacion con 3eros
+
+autenticación con github ------------------- 02:56
+
+
+dejé en ---- 02:48
+
 () => {}
