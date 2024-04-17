@@ -24,7 +24,10 @@ ruta para github --------------------------- 03:15
 
 ## JWT
 
+instalando JWT ----------------------------- 03:50    npm i jsonwebtoken
+archivo de configuración ------------------- 03:52
+trabajando archivo session.router register - 03:57
+login con JWT ------------------------------ 04:03
 
-dejé en ---- 03:41
 
 () => {}
