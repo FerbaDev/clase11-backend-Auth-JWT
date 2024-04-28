@@ -9,7 +9,9 @@ recuperando la contraseña ----------------- 00:48
 
 ## Passport
 
-Passport local ------------------------ ---- 01:12    npm install passport passport-local
+Passport local ----------------------------- 01:12    npm install passport passport-local
+initialize passport ------------------------ 01:19
+register en passport config ---------------- 01:20
 se termina de configurar passport config --- 01:34
 serializar y desserializar ----------------- 01:35
 cambios en app para passport --------------- 01:48
